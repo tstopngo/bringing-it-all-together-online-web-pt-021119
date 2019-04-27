@@ -45,7 +45,9 @@ class Dog
     self
   end
   
-  def self.create
+  def self.CREATE
+  
+end
   
   def self.find_by_name(name)
   
