@@ -36,7 +36,6 @@ class Dog
     sql_save = <<-SQL
       INSERT INTO students (name, breed) VALUES (?,?)
     SQL
-    
     if self.id
       self.update
     else
