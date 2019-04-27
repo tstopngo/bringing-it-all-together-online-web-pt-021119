@@ -39,10 +39,9 @@ class Dog
     if self.id
       self.update
     else
-      DB[:conn].execute(sql_save, self.name, self.grade)
+      DB[:conn].execute(sql_save, self.name, self.breed)
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
     end
-    self
   end
   
   def self.find_by_name(name)
