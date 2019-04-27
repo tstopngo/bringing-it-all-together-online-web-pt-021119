@@ -29,6 +29,9 @@ class Dog
   end
   
   def self.new_from_db(row)
+    
+    DOG.new()
+    
     sql_query = <<-SQL
     SELECT
     )
