@@ -22,7 +22,6 @@ class Dog
   def self.drop_table
     sql_table = <<-SQL
     DROP TABLE dogs
-    )
     SQL
     
     DB[:conn].execute(sql_table)
