@@ -34,7 +34,7 @@ class Dog
   
   def save
     sql_save = <<-SQL
-      INSERT INTO dog (name, breed) VALUES (?,?)
+      INSERT INTO dogs (name, breed) VALUES (?,?)
     SQL
     if self.id
       self.update
