@@ -30,10 +30,7 @@ class Dog
   
   def self.new_from_db(row)
     sql_query = <<-SQL
-    CREATE TABLE IF NOT EXISTS dogs (
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    breed TEXT
+    SELECT
     )
     SQL
     
