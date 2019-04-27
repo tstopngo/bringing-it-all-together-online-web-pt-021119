@@ -46,7 +46,7 @@ class Dog
   end
   
   def self.create
-    
+    song
   end
   
   def self.find_by_name(name)
