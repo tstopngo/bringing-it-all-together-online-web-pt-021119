@@ -71,7 +71,7 @@ class Dog
     binding.pry
     if !dog.empty?
       dog_data = dog[0]
-       binding.pry
+      dog = Dog.new
     end  
   end
   
