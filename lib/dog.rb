@@ -52,7 +52,9 @@ class Dog
   end
   
   def self.find_by_id(id)
-    
+    sql_query = <<-SQL
+      INSERT INTO dogs (name, breed) VALUES (?,?)
+    SQL
     
   end
   
