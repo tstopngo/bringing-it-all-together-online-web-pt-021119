@@ -47,6 +47,7 @@ class Dog
   
   def self.create(args)
     dog = Dog.new(args)
+    dog
   end
   
   def self.find_by_name(name)
