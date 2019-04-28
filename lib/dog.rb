@@ -53,7 +53,7 @@ class Dog
   
   def self.find_by_id(id)
     sql_query = <<-SQL
-      SELECT * FROM dogs WHERE ID = ?
+      SELECT * FROM dogs WHERE id = ?
       LIMIT 1
     SQL
     
