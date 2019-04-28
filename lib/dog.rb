@@ -72,7 +72,7 @@ class Dog
     binding.pry
     if !dog.empty?
       dog_data = dog[0]
-      
+    end  
     
   end
   
