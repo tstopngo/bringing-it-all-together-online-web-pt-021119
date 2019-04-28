@@ -96,8 +96,6 @@ class Dog
       UPDATE dogs SET name = ?, breed = ? WHERE id = ?
     SQL
 
-    DB[:conn].execute(sql_query,self.name, self.breed, self.id).map do |row|
-      self.new_from_db(row)
-    end.first
+    DB[:conn].execute(sql_query,self.name, self.breed, self.id).map
   end
 end
