@@ -53,7 +53,8 @@ class Dog
   
   def self.find_by_id(id)
     sql_query = <<-SQL
-      INSERT INTO dogs (name, breed) VALUES (?,?)
+      SELECT * FROM dogs WHERE ID = ?
+      LIMIT 1
     SQL
     
   end
