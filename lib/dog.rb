@@ -60,7 +60,7 @@ class Dog
     SQL
     
     DB[:conn].execute(sql_query, id)[0]
-    
+    Dog.new()
   end
   
   def self.find_by_name(name)
