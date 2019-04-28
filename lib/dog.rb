@@ -66,6 +66,8 @@ class Dog
     end.first
   end
   
+  def 
+  
   def self.find_by_name(name)
   
   end
