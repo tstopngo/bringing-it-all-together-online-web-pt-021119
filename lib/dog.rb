@@ -58,6 +58,7 @@ class Dog
     SQL
     
     DB[:conn].execute(sql_query).map do |row|
+      self.new(row)
     
   end
   
