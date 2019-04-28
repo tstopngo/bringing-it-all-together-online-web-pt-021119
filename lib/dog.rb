@@ -73,7 +73,7 @@ class Dog
       dog_data = dog[0]
       dog = self.new_from_db(dog_data)
     else
-      dog = self.new(args)
+      dog = self.create(args)
     end 
     dog
   end
