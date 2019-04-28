@@ -71,9 +71,9 @@ class Dog
     binding.pry
     if !dog.empty?
       dog_data = dog[0]
-      dog = Dog.new_from_db(dog_data)
+      dog = self.new_from_db(dog_data)
     else
-      
+      dog = 
     end 
     dog
   end
