@@ -73,7 +73,8 @@ class Dog
       dog_data = dog[0]
       dog = Dog.new
     else
-    end  
+    end 
+    dog
   end
   
   def self.find_by_name(name)
