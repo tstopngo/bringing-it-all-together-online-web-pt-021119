@@ -93,7 +93,7 @@ class Dog
   
   def update
     sql_query = <<-SQL
-      UPDATE 
+      UPDATE dogs SET name = ?, breed = ? WHERE id = ?
     SQL
 
     DB[:conn].execute(sql_query,name).map do |row|
