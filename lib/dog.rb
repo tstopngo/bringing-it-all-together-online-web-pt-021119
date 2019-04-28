@@ -59,7 +59,7 @@ class Dog
       LIMIT 1
     SQL
     
-    DB[:conn].execute(sql_query, id)[0]
+    search = DB[:conn].execute(sql_query, id)[0]
     Dog.new()
   end
   
