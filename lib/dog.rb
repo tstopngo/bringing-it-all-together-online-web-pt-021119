@@ -70,7 +70,7 @@ class Dog
     binding.pry
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?, breed = ?", args[:name], args[:breed])
     
-    
+    if !dog.empty?
     
   end
   
