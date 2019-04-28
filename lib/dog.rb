@@ -95,7 +95,6 @@ class Dog
     sql_query = <<-SQL
       UPDATE dogs SET name = ?, breed = ? WHERE id = ?
     SQL
-
     DB[:conn].execute(sql_query,self.name, self.breed, self.id).map
   end
 end
