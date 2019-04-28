@@ -73,6 +73,7 @@ class Dog
       dog_data = dog[0]
       dog = Dog.new
     else
+      
     end 
     dog
   end
