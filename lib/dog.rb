@@ -61,7 +61,7 @@ class Dog
     
     search = DB[:conn].execute(sql_query, id)[0]
     binding.pry
-    dog = Dog.new(search)
+    dog = Dog.new_from_db(search)
     dog
   end
   
