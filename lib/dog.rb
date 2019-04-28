@@ -70,6 +70,8 @@ class Dog
     binding.pry
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?, breed = ?", args[:name], args[:breed])
     
+    
+    
   end
   
   def self.find_by_name(name)
