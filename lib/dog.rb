@@ -57,6 +57,8 @@ class Dog
       LIMIT 1
     SQL
     
+    DB[:conn].execute(sql_query).map do |row|
+    
   end
   
   def self.find_by_name(name)
