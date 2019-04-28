@@ -57,8 +57,9 @@ class Dog
       LIMIT 1
     SQL
     
-    DB[:conn].execute(sql_query).map do |row|
+    DB[:conn].execute(sql_query, id).map do |row|
       self.new(row)
+      
     
   end
   
