@@ -60,7 +60,7 @@ class Dog
     SQL
     
     search = DB[:conn].execute(sql_query, id)[0]
-    dog = Dog.new_from_db(search)
+    dog = self.new_from_db()
     dog
   end
   
