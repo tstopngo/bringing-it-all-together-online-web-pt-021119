@@ -92,6 +92,12 @@ class Dog
   end
   
   def update
-    
+    sql_query = <<-SQL
+      UPDATE 
+    SQL
+
+    DB[:conn].execute(sql_query,name).map do |row|
+      self.new_from_db(row)
+    end.first
   end
 end
