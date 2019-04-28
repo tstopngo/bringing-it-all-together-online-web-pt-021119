@@ -60,6 +60,7 @@ class Dog
     SQL
     
     search = DB[:conn].execute(sql_query, id)[0]
+    binding.pry
     dog = Dog.new(search)
     dog
   end
