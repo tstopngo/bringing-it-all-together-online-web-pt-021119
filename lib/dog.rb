@@ -73,7 +73,6 @@ class Dog
     if !dog.empty?
       dog_data = dog[0]
     end  
-    
   end
   
   def self.find_by_name(name)
