@@ -59,9 +59,9 @@ class Dog
       LIMIT 1
     SQL
     
-    search = DB[:conn].execute(sql_query, id)[0]
-    dog = self.new_from_db(search)
-    dog
+      DB[:conn].execute(sql,id).map do |row|
+      self.new_from_db(row)
+    end.first
   end
   
   def self.find_by_name(name)
